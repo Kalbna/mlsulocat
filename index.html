@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="title" content="MLSU CAMPUS LOCATION">
+    <meta name="author" content="Tanishq Chejara S/O Kamlesh Kumar Chejara,Tanishq Chejara" />
+    <meta name="description" content="website is created by tanishq chejara.
+    this website is about campus located by mohanlal sukhadia university and it's all admin blocks and collages and departments" />
+    <meta name="keyword" content="MLSU,mlsu campus, mlsu locations,mlsu collage locations,mlsu Department locations,mohanlal sukhadia university,mlsu Udaipur,Udaipur university" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="favicon_io/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon_io/site.webmanifest" />
+    <title>Mlsu campus</title>
+    <!-- reset style -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <!-- loading style and function -->
+    <link rel="stylesheet" href="css/loadingscreen.css" />
+    <script defer type="module" src="functionjs/loading.js"></script>
+
+    <!-- style sheets -->
+    <link rel="stylesheet" href="css/footerstyle.css" />
+    <link rel="stylesheet" href="css/mainstyle.css" />
+    <link rel="stylesheet" href="css/headerstyle.css" />
+    <link rel="stylesheet" href="css/aboutstyle.css" />
+    <link rel="stylesheet" href="css/footerwave.css" />
+    <!-- font links -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <!-- javascript files -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script  src="functionjs/aboutbutton.js"></script>
+    <script defer type="module" src="functionjs/toplocat.js"></script>
+    <script defer type="module" src="functionjs/showbtn.js"></script>
+    <script defer type="module" src="functionjs/navigation.js"></script>
+    <script defer type="module" src="functionjs/navItemLoader.js"></script>
+    <script defer type="module" src="functionjs/scrollup.js"></script>
+
+    <!-- last style sheet files  -->
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="css/last.css" />
+  </head>
+
+  <!-- <script>
+  document.addEventListener('contextmenu', event => event.preventDefault());
+</script>
+ -->
+
+
+  <body>
+    <div class="catf">
+      <div class="cat">
+        <div class="ear ear--left"></div>
+        <div class="ear ear--right"></div>
+        <div class="face">
+          <div class="eye eye--left">
+            <div class="eye-pupil"></div>
+          </div>
+          <div class="eye eye--right">
+            <div class="eye-pupil"></div>
+          </div>
+          <div class="muzzle"></div>
+        </div>
+      </div>
+    </div>
+
+    <header>
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar-header">
+            <button class="navbar-toggler" data-toggle="open-navbar1">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <a href="/" id="logolink">
+              <object
+                class="obje"
+                data="svg/logo_red.svg"
+                type="image/svg+xml"
+              ></object>
+              
+            </a>
+          </div>
+
+          <div class="navbar-menu" id="open-navbar1">
+            <ul class="navbar-nav">
+              <li class="active"><a id="homedown" href="#">Home</a></li>
+              <li id="administrative" class="navbar-dropdown">
+                <a
+                  href="#"
+                  id="admindown"
+                  class="dropdown-toggler"
+                  data-dropdown="my-dropdown-id"
+                >
+                  Administrative <i class="fa fa-angle-down"></i>
+                </a>
+                <ul class="dropdown" id="my-dropdown-id"></ul>
+              </li>
+              <li id="departidbtn" class="navbar-dropdown">
+                <a
+                  id="departdown"
+                  href="#"
+                  class="dropdown-toggler"
+                  data-dropdown="blog"
+                >
+                  Department <i class="fa fa-angle-down"></i>
+                </a>
+                <ul class="dropdown" id="blog"></ul>
+              </li>
+             
+
+              <li>
+                <div class="containerr">
+                  <button
+                    id="openMyPopup"
+                    data-popup="myPopup"
+                    onClick="openPopup('#myPopup')"
+                    aria-controls="myPopup"
+                    aria-label="Open popup"
+                  >
+                    About
+                  </button>
+                </div>
+
+                <div
+                  class="popup"
+                  id="myPopup"
+                  aria-hidden="true"
+                  onClick="if(event.target == this){closePopup('#myPopup');}"
+                >
+                  <div
+                    class="wrapper"
+                    aria-labelledby="popupTitle"
+                    aria-describedby="popupText"
+                    aria-modal="true"
+                  >
+                    <h2 id="popupTitle">About Us</h2>
+                    <p id="popupText"><!-- About US details --></p>
+                    <button
+                      id="closePopup"
+                      onClick="closePopup('#myPopup');"
+                      aria-label="Close popup"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <!-- can append header links -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="cd-main-content">
+      
+      <section class="mainwide">
+        <section id="maincon">
+        
+        </section>
+        <div class="showmore" id="buttondiv">
+          <button class="button-31" type="button" id="buttonshow">
+            Show More
+          </button>
+        </div>
+      </section>
+      <button class="scrollToTopBtn">
+        <span class="material-symbols-outlined"> arrow_upward </span>
+      </button>
+    </main>
+    <footer class="footer" id="footsec">
+      <div class="footer__addr">
+        <h1 class="footer__logo">Mohanlal Sukhadia University</h1>
+
+        <h2>Contact</h2>
+        <br />
+        <address>
+          Mohanlal Sukhadia University, Udaipur, 313001, Rajasthan, India<br /><br />
+
+          <a class="footer__btn" href="mailto:registrar@mlsu.ac.in"
+            >E-mail: registrar@mlsu.ac.in</a
+          >
+          <br /><br />
+          <a href="tel:+0294-2471505">Helpline:0294-2471505</a>
+          <br />
+          <br />
+          <a href="http://www.mlsu.ac.in/upload/GST.pdf"
+            >GSTIN: 08AAAJM1548D1ZE</a
+          >
+        </address>
+      </div>
+      <span class="air air1"></span>
+      <ul class="footer__nav">
+        <li class="nav__item">
+          <h2 class="nav__title">Media</h2>
+
+          <ul class="nav__ul">
+            <li>
+              <a href="https://www.mlsu.ac.in/index.html">Official Website</a>
+            </li>
+
+            <li>
+              <a href="https://twitter.com/apnamlsu">Twitter</a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.facebook.com/mohanlalsukhadiauniversityudaipur"
+                >Facebook</a
+              >
+            </li>
+            <li>
+              <a href="https://www.instagram.com/apnamlsu/">Instagram</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav__item nav__item--extra">
+          <h2 class="nav__title">Quick Links</h2>
+
+          <ul class="nav__ul nav__ul--extra">
+            <li>
+              <a href="https://www.mlsu.ac.in/Board-of-Management"
+                >Board-of-Management</a
+              >
+            </li>
+
+            <li>
+              <a href="https://www.mlsu.ac.in/Registrar">Registrar</a>
+            </li>
+
+            <li>
+              <a href="https://www.mlsu.ac.in/Online-Admission20">Admission</a>
+            </li>
+
+            <li>
+              <a
+                href="https://iums.mlsuportal.in/GuestHouse/GHM_guestrequest.aspx"
+                >GuestHouse</a
+              >
+            </li>
+
+            <li>
+              <a href="https://www.mlsu.ac.in/MLSU-in-News">MLSU-in-News</a>
+            </li>
+
+            <li>
+              <a href="https://www.mlsu.ac.in/Sports-Board">Sports-Board</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav__item">
+          <h2 class="nav__title">Legal</h2>
+
+          <ul class="nav__ul">
+            <li>
+              <a href="https://www.mlsu.ac.in/category.php?catid=14&pageid=433"
+                >Privacy Policy</a
+              >
+            </li>
+
+            <li>
+              <a href="https://www.mlsu.ac.in/category.php?catid=14&pageid=435"
+                >Terms of Use</a
+              >
+            </li>
+
+            <li>
+              <a href="https://www.mlsu.ac.in/category.php?catid=14&pageid=434"
+                >Disclaimer</a
+              >
+            </li>
+            <li id="offi">Nodal Officer : Dr. Avinash Panwar</li>
+          </ul>
+        </li>
+      </ul>
+      <span class="air air2"></span>
+      <div class="legal">
+        <p id="cop">Copyright &copy; 2023 Mlsu. All rights reserved.</p>
+
+        <div class="legal__links">
+          <span class="dev"
+            >Developed and Design by <b> Tanishq Chejara </b><br /><br />
+            Powered by <b>Avid Web Solutions Pvt. Ltd.</b>
+          </span>
+        </div>
+      </div>
+      <span class="air air3"></span>
+      <span class="air air4"></span>
+    
+    </footer>
+  </body>
+</html>

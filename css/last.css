@@ -1,0 +1,298 @@
+:root{
+  /*Default style*/
+  --Dbgcolor:#FFFFFF;
+  --Dtextcolor:#121212;
+  --Dhovertextcolor:#F5F4F4;
+  --Dlinkcolor:#373737;
+  --Dmaintextcolor:#111111;
+  --Diconhovercolor:#C5C5C5;
+  --Dmaintextbgcolor:#d32727;
+  --Diconbordercolor:#1F1D1D;
+  --Diconboxshawdocolor:#626262;
+  --Dmaintextbordercolor:#707070;
+  --Dmainintextbgcolor:#FFE5E5;
+  --Ddevcolor:#0F1110;
+  /*Font */
+  --Dmaintextfont: 'Noto Sans','HP Simplified Hans','sans-serif';
+  --Dmaintextfontsize: 2rem;
+  --Dheadlinkfont:'Noto Sans','HP Simplified Hans', 'serif';
+  --Dheadlinkfontsize:2rem;
+  --Dfootheadingfont:'Noto Sans','HP Simplified Hans','sans-serif';
+  --Dfootheadingfontsize:2.2rem;
+  --Dheaddropfontsize:1.5rem;
+}
+.navbar, .navbar > .container {
+  background-color: var(--Dbgcolor);
+  
+}
+#homedown,#admindown,#departdown,#openMyPopup{
+  color: var(--Dtextcolor);
+  font-family: var(--Dheadlinkfont);
+  font-size: var(--Dheadlinkfontsize);
+}
+#homedown:hover,#admindown:hover,#departdown:hover,#openMyPopup:hover{
+  color: var(--Dhovertextcolor);
+  background: var(--Dtextcolor);
+}
+#my-dropdown-id > li>a,.navbar .navbar-menu .navbar-nav .navbar-dropdown .dropdown li a {
+  background-color: var(--Dbgcolor);
+  color: var(--Dtextcolor);
+}
+.navbar .navbar-menu .navbar-nav .navbar-dropdown .dropdown {
+  background-color: var(--Dbgcolor);
+  color: var(--Dtextcolor);
+  font-family: var(--Dmaintextfont);
+  font-size: var(--Dheaddropfontsize);
+}
+#my-dropdown-id > li>a:hover, .navbar .navbar-menu .navbar-nav .navbar-dropdown .dropdown li a:hover{
+  color: var(--Dhovertextcolor);
+  background: var(--Dtextcolor);
+}
+.navbar .navbar-menu .navbar-nav .dropdown > .separator{
+  background-color: var(--Dtextcolor);
+}
+.mainsection{
+  color: var(--Dmaintextcolor);
+  background-color: var(--Dmaintextbgcolor);
+  border-color: transparent;
+  border-radius: 22px;
+}
+.itext,.gm{
+  color: var(--Dmaintextcolor);
+  border-color: var(--Diconbordercolor);
+  border-radius: 10px;
+}
+.itext:hover,.gm:hover{
+  background-color: var(--Diconhovercolor);
+  border-color: var(--Diconboxshawdocolor);
+  box-shadow: 0 0 3rem var(--Diconboxshawdocolor);
+}
+.itext{
+  text-shadow: 1px 1px 1px var(--Dmaintextcolor),
+      1px 2px 1px var(--Dmaintextcolor),
+      1px 3px 1px var(--Dmaintextcolor),
+      1px 4px 1px var(--Dmaintextcolor);
+}
+
+
+.engname,.hindiname{
+  border-color: transparent;
+  background-color: var(--Dhovertextcolor);
+  border-radius: 12px;
+  font-family: var(--Dmaintextfont);
+  font-size: var(--Dmaintextfontsize);
+  font-weight: 800;
+}
+
+#footsec{
+  border-top: 1px solid var(--Dtextcolor);
+}
+.footer__logo{
+  color: var(--Dtextcolor);
+  font-weight: 800;
+  font-style: italic;
+  font-size: var(--Dfootheadingfontsize);
+}
+
+.footer address{
+  color: var(--Dmaintextcolor);
+  font-family: var(--Dfootheadingfont);
+}
+.footer__addr h2 {
+  font-family: var(--Dfootheadingfont);
+}
+.footer address a{
+  color: var(--Dlinkcolor);
+}
+.footer li{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* font-weight: 600; */
+}
+b{
+  color: var(--Ddevcolor);
+  font-family: var(--Dmaintextfont);
+  font-weight: 800;
+}
+#cop{
+  color: var(--Ddevcolor);
+  font-weight: 600;
+}
+#offi{
+  color: var(--Dlinkcolor);
+  font-weight: 900;
+}
+.nav__title{
+  color: var(--Dmaintextcolor);
+  font-family: var(--Dfootheadingfont);
+}
+.nav__ul a{
+  color: var(--Dmaintextbordercolor);
+}
+.dev{
+  color: var(--Ddevcolor);
+}
+.scrollToTopBtn{
+  border-radius: 30%;
+  color: var(--Dhovertextcolor);
+  background-color: var(--Dlinkcolor);
+}
+.elementbutton > button,.button-31{
+  color: var(--Dhovertextcolor);
+  background-color: var(--Dlinkcolor);
+}
+.button-31{
+  font-weight: 700;
+  font-style: italic;
+  
+}
+/*mobile devices*/
+@media screen and (width <= 481px) {
+ /*  body{
+    min-width: 1140px;
+    max-width: 1150px;
+    
+  } */
+  :root{
+    --Dmaintextfontsize: 1.65rem;
+  }
+  .mainsection{
+    width: 300px;
+    height: 300px;
+  }
+  #logolink{
+    width: 300px;
+  }
+  .gm{
+    width: 9rem;
+    height: 9rem;
+  }
+  .hindiname,.engname{
+    width: 220px;
+    height: 50px;
+  }
+
+  #footsec{
+    /* height:calc(65vh + 95px); */
+    height: 750px;
+  }
+  #footsec .air{
+    height: 30px;
+  }
+}
+/* ipads,Tablets*/
+@media screen and (481px < width <= 768px) {
+
+  :root{
+    --Dmaintextfontsize: 1.85rem;
+  }
+  .mainsection{
+    width: 320px;
+    height: 320px;
+  }
+  .obje{
+    width: 100%;
+    max-width: none;
+    padding-right: 10%;
+  }
+  #logolink{
+    width: 100%;
+  }
+  .navbar .navbar-header .navbar-toggler{
+    width: 30px;
+    height: 30px;
+  }
+  .elementbutton{
+    top: 130px;
+  }
+
+  #footsec{
+   /*  height:calc(60vh + 95px); */
+    height: 740px;
+  }
+  @media screen and  (646px <= width <= 768px) {
+    #footsec{
+      /* height:calc(25vh + 95px); */
+      height: 410px;
+    }
+  }
+ 
+  #footsec .air{
+    height: 50px;
+  }
+  
+}
+/*small screen,laptop*/
+@media screen and (769px<= width <= 1024px) {
+  :root{
+    --Dmaintextfontsize: 1.9rem;
+  }
+  @media screen and (width < 950px) {
+    header{
+      height: min-content;
+    }
+  }
+  body{
+    min-width: 1140px;
+    max-width: 1150px;
+  }
+  .cd-main-content{
+    min-height: calc(100vh - calc(20rem + 100px));
+  }
+  .mainsection{
+    width: 350px;
+    height: 350px;
+  }
+  #logolink{
+    width: 509px;
+  }
+  #footsec{
+    height: 350px;
+  }
+  #footsec .air{
+    height: 50px;
+  }
+}
+/* Desktop large screen*/
+@media screen and (1025px <= width <= 1200px )  {
+  body{
+    min-width: 1140px;
+    max-width: 1150px;
+    
+  }
+  .cd-main-content{
+    min-height: calc(100vh - calc(20rem + 100px));
+  }
+  .mainsection{
+    width: 375px;
+    height: 375px;
+  }
+
+  #footsec{
+    height: 350px;
+  }
+  #footsec .air{
+    height: 50px;
+  }
+
+}
+/*Extra large screen,TV*/
+@media screen and (1201px< width ) {
+  body{
+    min-width: 1140px;
+    max-width: 1150px;
+    
+  }
+  .obje{
+    width:510px ;
+  }
+  .cd-main-content{
+    min-height: calc(100vh - calc(340px + 100px));
+  }
+  #footsec{
+    height: 340px;
+  }
+  #footsec .air{
+    height: 40px;
+  }
+
+}
